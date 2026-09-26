@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    color: #333;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    background: #c62828;
+    color: white;
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.logo-titulo h1 {
+    font-size: 24px;
+}
+
+.logo-titulo p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.menu-icono {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   MENÚ LATERAL
+========================= */
+
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #a71919;
+    overflow-x: hidden;
+    transition: .4s;
+    padding-top: 70px;
+    z-index: 1000;
+}
+
+.menu-lateral a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px 30px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.menu-lateral a:hover {
+    background: #7d1010;
+}
+
+.cerrar {
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    height: 100vh;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+        url("imagenes/bannerog.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.contenido-banner {
+    color: white;
+    max-width: 900px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.pequeno {
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.contenido-banner h2 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.contenido-banner p {
+    font-size: 22px;
+}
+
+.boton-banner {
+    display: inline-block;
+    margin-top: 35px;
+    background: #c62828;
+    color: white;
+    text-decoration: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.boton-banner:hover {
+    transform: scale(1.07);
+    background: #8e1515;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    padding: 100px 8%;
+}
+
+.fondo-gris {
+    background: #f5f5f5;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.etiqueta {
+    color: #c62828;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2 {
+    color: #c62828;
+    font-size: 40px;
+    margin-top: 8px;
+}
+
+.linea {
+    width: 60px;
+    height: 4px;
+    background: #c62828;
+    margin: 15px auto;
+}
+
+
+/* =========================
+   HISTORIA
+========================= */
+
+.espacio-contenido {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.espacio-imagen {
+    width: 50%;
+    height: 300px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    border-radius: 15px;
+}
+
+.espacio-texto {
+    width: 50%;
+}
+
+.espacio-texto h3 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.espacio-texto p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   MISIÓN Y VISIÓN
+========================= */
+
+.tarjetas {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjeta {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+}
+
+.icono {
+    font-size: 40px;
+}
+
+.tarjeta h3 {
+    color: #c62828;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.tarjeta p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ANUNCIOS
+========================= */
+
+.botones-anuncios {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.botones-anuncios button {
+    border: 2px solid #c62828;
+    background: white;
+    color: #c62828;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.botones-anuncios button:hover {
+    background: #c62828;
+    color: white;
+}
+
+.espacio-anuncios {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.anuncio-vacio {
+    border: 2px dashed #ccc;
+    padding: 60px;
+    text-align: center;
+    color: #999;
+    border-radius: 15px;
+}
+
+
+/* =========================
+   PROFESORES Y ESTUDIANTES
+========================= */
+
+.personas {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.persona {
+    background: white;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.foto-persona {
+    height: 250px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+}
+
+.persona h3 {
+    margin-top: 20px;
+    color: #c62828;
+}
+
+.persona p {
+    color: #777;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   CLUBES
+========================= */
+
+.clubes {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.club {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.07);
+    color: #c62828;
+    font-weight: 600;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.galeria {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.galeria div {
+    height: 220px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    border-radius: 10px;
+    
+}
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto-vacio {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contacto-vacio div {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.07);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #a71919;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+    opacity: .8;
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 768px) {
+
+    .logo-titulo h1 {
+        font-size: 17px;
+    }
+
+    .logo-titulo p {
+        font-size: 11px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .contenido-banner h2 {
+        font-size: 35px;
+    }
+
+    .contenido-banner p {
+        font-size: 17px;
+    }
+
+    .espacio-contenido {
+        flex-direction: column;
+    }
+
+    .espacio-imagen,
+    .espacio-texto {
+        width: 100%;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .personas {
+        grid-template-columns: 1fr;
+    }
+
+    .clubes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+}/* ESTILO DE LOS ANUNCIOS */
+
+.espacio-anuncios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.anuncio {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    border-left: 5px solid #b30000;
+    border-right: 5px solid #b30000;
+    text-align: center;
+}
+
+.anuncio h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #b30000;
+    font-size: 22px;
+}
+
+.anuncio p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.imagen-anuncio {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+/* GALERÍA CON FLECHAS */
+
+.galeria-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.galeria {
+    flex: 1;
+}
+
+.flecha-galeria {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.flecha-galeria:hover {
+    background-color: #8f0000;
+}/* ===============================
+   VISOR DE FOTOS
+================================ */
+
+.foto-galeria {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.foto-galeria:hover {
+    transform: scale(1.03);
+}
+
+
+.visor-foto {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+
+.visor-contenido {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+.visor-contenido img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+}
+
+
+.cerrar-visor {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 1;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Corporación Educativa Niño Jesús</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="contenedor-header">
+
+            <div class="logo-titulo">
+
+                <img src="imagenes/logoog.jpeg" alt="Logo del colegio" class="logo">
+
+                <div>
+                    <h1>Corporación Educativa Niño Jesús</h1>
+                    <p>Abriendo caminos con pasos de excelencia.</p>
+                </div>
+
+            </div>
+
+            <div class="menu-icono" onclick="abrirMenu()">
+                ☰
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENÚ LATERAL -->
+
+    <div id="menuLateral" class="menu-lateral">
+
+        <span class="cerrar" onclick="cerrarMenu()">&times;</span>
+
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#mision">Misión y Visión</a>
+        <a href="#anuncios">Anuncios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+
+    </div>
+
+
+    <!-- BANNER -->
+
+    <section id="inicio" class="banner">
+
+        <div class="contenido-banner">
+
+            <p class="pequeno">BIENVENIDOS</p>
+
+            <h2>Corporación Educativa Niño Jesús</h2>
+
+            <p>Abriendo caminos con pasos de excelencia.</p>
+
+            <a href="#historia" class="boton-banner">Conócenos</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTORIA -->
+
+    <section id="historia" class="seccion historia">
+
+        <div class="titulo-seccion">
+
+            
+
+            <h2>Nuestra Historia</h2>
+
+            <div class="linea"></div>
+
+        </div>
+
+        <div class="espacio-contenido">
+
+            <div class="espacio-imagen">
+                FOTO
+            </div>
+
+            <div class="espacio-texto">
+                <h3>Historia de la institución</h3>
+                <p>Aquí irá la información de la historia del colegio.</p>
+                <p>Este espacio será reemplazado posteriormente por la información real.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MISIÓN Y VISIÓN -->
+
+    <section id="mision" class="seccion fondo-gris">
+
+        <div class="titulo-seccion">
+
+            
+
+            <h2>Misión y Visión</h2>
+
+            <div class="linea"></div>
+
+        </div>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+
+                <div class="icono"></div>
+
+                <h3>Misión</h3>
+
+                <p>En su misión pretende mediante la investigación generar estrategias que permitan brindar a los estudiantes una formación inducida hacia el conocimiento, los valores y el compromiso social, a través de la implementación de un modelo educativo basado en el desarrollo humano integral que permita el fortalecimiento personal, familiar, de la capacidad investigativa, el impulso de una cultura de innovación, renovación y emprendimiento para de esta manera mejorar la calidad de vida de nuestra comunidad educativa.</p>
+
+            </div>
+
+            <div class="tarjeta">
+
+                <div class="icono"></div>
+
+                <h3>Visión</h3>
+
+                <p>La Corporación Educativa Niño Jesús se vislumbra como la Institución Educativa de carácter privado de gran prestigio y empeño; a través de un servicio educativo de calidad basado en el desarrollo de competencias y actitudes positivas direccionadas a la formación de niños, niñas y adolescentes investigadores y transformadores de su entorno mediante el desarrollo de proyectos  de ciencia, emprendimiento, cultura y tecnología.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ANUNCIOS -->
+
+    <section id="anuncios" class="seccion">
+
+        <div class="titulo-seccion">
+
+        
+
+            <h2>Anuncios</h2>
+
+            <div class="linea"></div>
+
+        </div>
+
+       
+
+       <div class="espacio-anuncios" id="lista-anuncios">
+    <!-- Los anuncios de Supabase aparecerán aquí -->
+</div>
+
+        </div>
+
+ 
+
+
+
+
+
+
+
+
+    <!-- GALERÍA -->
+
+   <section id="seccion-galeria" class="seccion">
+
+    <div class="titulo-seccion">
+        <h2>Galería</h2>
+        <div class="linea"></div>
+    </div>
+
+    <div class="galeria-contenedor">
+
+        <button class="flecha-galeria izquierda" onclick="galeriaAnterior()">❮</button>
+
+        <div class="galeria" id="galeria">
+            <!-- Las fotos aparecerán aquí automáticamente -->
+        </div>
+
+        <button class="flecha-galeria derecha" onclick="galeriaSiguiente()">❯</button>
+
+    </div>
+
+</section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="seccion fondo-gris">
+
+        <div class="titulo-seccion">
+
+        
+
+            <h2>Contacto</h2>
+
+            <div class="linea"></div>
+
+        </div>
+
+        <div class="contacto-vacio">
+
+            <div>📍 Cra. 6 #9-86, Sabanagrande, Atlántico</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <h3>Corporación Educativa Niño Jesús</h3>
+
+        <p>Abriendo caminos con pasos de excelencia.</p>
+
+        <p class="copyright">
+            © 2026 Corporación Educativa Niño Jesús
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
